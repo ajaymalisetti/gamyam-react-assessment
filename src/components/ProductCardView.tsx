@@ -34,11 +34,10 @@ export default function ProductCardView({ products, onEdit }: Props) {
             transition: "0.3s ease",
             boxShadow: "0 8px 22px rgba(0,0,0,0.35)",
             cursor: "pointer",
-
-            // ⭐ NEW: Flex to push button to bottom
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
+              height: "280px",
           }}
           onMouseEnter={(e) => {
             e.currentTarget.style.transform = "translateY(-5px)";

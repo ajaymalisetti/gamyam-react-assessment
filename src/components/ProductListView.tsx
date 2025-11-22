@@ -23,7 +23,7 @@ export default function ProductListView({ products, onEdit }: Props) {
       <thead>
         <tr
           style={{
-            background: "linear-gradient(90deg, #ff7c26, #ff9f50)", // 🔥 orange gradient
+            background: "linear-gradient(90deg, #ff7c26, #ff9f50)", 
             color: "#fff",
           }}
         >
@@ -45,7 +45,7 @@ export default function ProductListView({ products, onEdit }: Props) {
               background: "#111",
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = "rgba(255,124,38,0.12)"; // soft orange glow
+              e.currentTarget.style.background = "rgba(255,124,38,0.12)"; 
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.background = "#111";
@@ -62,7 +62,7 @@ export default function ProductListView({ products, onEdit }: Props) {
                 onClick={() => onEdit(p)}
                 style={{
                   padding: "8px 16px",
-                  background: "linear-gradient(90deg, #ff7c26, #ff9f50)", // 🟧 button gradient
+                  background: "linear-gradient(90deg, #ff7c26, #ff9f50)", 
                   color: "#fff",
                   border: "none",
                   borderRadius: "8px",
@@ -74,7 +74,7 @@ export default function ProductListView({ products, onEdit }: Props) {
                 }}
                 onMouseEnter={(e) =>
                   (e.currentTarget.style.background =
-                    "linear-gradient(90deg, #ff6a00, #ff8a33)") // darker hover
+                    "linear-gradient(90deg, #ff6a00, #ff8a33)") 
                 }
                 onMouseLeave={(e) =>
                   (e.currentTarget.style.background =

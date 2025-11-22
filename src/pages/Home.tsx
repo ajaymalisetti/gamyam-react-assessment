@@ -20,7 +20,7 @@ export default function Home({ products, setProducts }: Props) {
   const [showForm, setShowForm] = useState(false);
   const [editing, setEditing] = useState<Product | null>(null);
 
-  // Debounced setter for search (500ms)
+
   const debouncedSetQuery = useMemo(
     () => debounce((v: string) => { setQuery(v); setPage(1); }, 500),
     []
@@ -33,7 +33,6 @@ export default function Home({ products, setProducts }: Props) {
   );
 
   const total = filtered.length;
-  // const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
   const paginated = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
   const handleAdd = () => {

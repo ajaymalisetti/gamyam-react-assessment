@@ -1,4 +1,3 @@
-// import React from "react";
 import { type Product } from "../types";
 
 type Props = {
@@ -51,7 +50,7 @@ export default function ProductCardView({ products, onEdit }: Props) {
           }}
         >
           <div>
-            {/* Title */}
+    
             <h3
               style={{
                 margin: 0,
@@ -63,7 +62,7 @@ export default function ProductCardView({ products, onEdit }: Props) {
               {p.name}
             </h3>
 
-            {/* Price */}
+
             <div
               style={{
                 marginTop: 10,
@@ -75,26 +74,25 @@ export default function ProductCardView({ products, onEdit }: Props) {
               ₹ {p.price}
             </div>
 
-            {/* Category */}
+          
            <div
   style={{
     marginTop: 8,
     display: "inline-block",
     padding: "3px 10px",
     borderRadius: "12px",
-    background: "rgba(255, 124, 38, 0.18)", // soft tint
+    background: "rgba(255, 124, 38, 0.18)", 
     color: "#ff9f55",
     fontSize: "11px",
     fontWeight: 500,
     letterSpacing: "0.4px",
-    border: "1px solid rgba(255, 124, 38, 0.35)", // thin border, premium feel
+    border: "1px solid rgba(255, 124, 38, 0.35)", 
   }}
 >
   {p.category}
 </div>
 
 
-            {/* Stock */}
             <div style={{ marginTop: 16, fontSize: 14, color: "#cfcfcf" }}>
               Stock:{" "}
               <span
@@ -108,12 +106,12 @@ export default function ProductCardView({ products, onEdit }: Props) {
             </div>
           </div>
 
-          {/* ⭐ Button aligned bottom-right */}
+          {}
           <div
             style={{
               marginTop: 24,
               display: "flex",
-              justifyContent: "flex-end", // right side
+              justifyContent: "flex-end", 
             }}
           >
             <button
